@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+   <link rel="stylesheet" href="./main.css">
+   <title>Document</title>
+</head>
+<body>
+  <div class="container">
+
+   <div class="acntnav">
+      <a href="./index.html" class="acntnav__item"><i class="arrow left icon"></i></a>
+      <div class="acntnav__item">Mi <span class="acntspan"> cuenta</span></div>
+      <div class="acntnav__item"><i class="power off icon switch"></i></div>
+   </div>
+
+   <div class="card">
+      <img src="./hi.jpg" alt="" class="profile__img">
+
+      <div class="profile__name">Pavan Cc</div>
+      <div class="profile__address">RUT (CHL): 32.132.132-1</div>
+      <div class="profile__email">pavancc@gmail.com</div>
+
+      <div class="card__line">&nbsp;</div>
+      <div class="card__details">
+         <div class="title">Saldo disponible</div> 
+         
+         <div class="price">CLP $ 0</div>
+      </div>
+   </div>
+
+   <div class="register">Registro de movimientos</div>
+   <div class="des">Tus viajes, gastos, estadisticas y mas.</div>
+
+
+   <div class="grid__list">
+      <div class="grid__item">
+         <div class="grid__icon"><i class="thumbs up icon"></i></div>
+         <div class="grid__title">Mi QR</div>
+      </div>
+      <div class="grid__item">
+         <div class="grid__icon"><i class="thumbs up icon"></i></div>
+         <div class="grid__title">Mi QR</div>
+      </div>
+      <div class="grid__item">
+         <div class="grid__icon"><i class="thumbs up icon"></i></div>
+         <div class="grid__title">Mi QR</div>
+      </div>
+      <div class="grid__item">
+         <div class="grid__icon"><i class="thumbs up icon"></i></div>
+         <div class="grid__title">Mi QR</div>
+      </div>
+      <div class="grid__item">
+         <div class="grid__icon"><i class="thumbs up icon"></i></div>
+         <div class="grid__title">Mi QR</div>
+      </div>
+      <div class="grid__item">
+         <div class="grid__icon"><i class="thumbs up icon"></i></div>
+         <div class="grid__title">Mi QR</div>
+      </div>
+    
+   </div>
+
+  </div>
+</body>
+<style>
+   .acntnav{
+      display: flex;
+      justify-content: space-between;
+      padding: 1rem 1rem ;
+      height: 150px;
+      background-image: linear-gradient(45deg, #ff5a5af2, #5cec11e0);
+      border-bottom-left-radius: 30px;
+      border-bottom-right-radius: 30px;
+      color: white;
+   }
+
+   .acntnav__item {
+      color: white;
+      font-size: 1.2rem;
+      /* font-weight: normal; */
+
+   }
+
+   .acntspan{
+      font-weight: bolder;
+      
+   }
+
+
+   .card{
+      background-color: rgb(255, 255, 255);
+      width: 88%;
+      margin: auto;
+
+      margin-top: -4rem;
+      border-radius: 10px;
+      position: relative;
+      height: 180px;
+
+      box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.13);
+      text-align: center;
+      color: grey;
+   }
+
+   .profile__img{
+      height: 60px;
+      width: 60px;
+      border-radius: 50%;
+      border: 2px solid white;
+
+      position: absolute;
+      left: 50%;
+      top: -15%;
+      transform: translateX(-50%);
+   }
+
+   .profile__name{
+      padding-top: 3.5rem;
+      font-weight: bolder;
+      font-size: 1.2rem;
+      color: black;
+   }
+
+   .profile__address{
+
+   }
+
+   .profile__email{
+   }
+
+   .card__line{
+      border-bottom: 1px solid rgb(214, 193, 193);
+      width: 90%;
+      margin: auto;
+      margin-bottom: 1rem;
+   }
+
+   .card__details{
+      display: flex;
+      justify-content: space-between;
+      padding: 0 1rem;
+   }
+
+   .title{
+      font-size: 1.1rem;
+   }
+
+   .price{
+      color: black;
+      font-weight: bolder;
+   }
+
+   .register{
+      text-align: center;
+      font-weight: bolder;
+      font-size: 1.2rem;
+      margin-top: 2rem;
+   }
+
+   .des{
+      text-align: center;
+      color: grey;
+   }
+
+   .grid__list{
+      display: grid;
+      grid-template-columns: repeat(3 ,1fr);
+      grid-template-rows: repeat(2 , 70px);
+      /* padding: 0 1.4rem; */
+      width: 88%;
+      margin: auto;
+      grid-gap: 1.2rem;
+      margin-top: 2rem;
+   }
+
+   .grid__item{
+      box-shadow: 0 0 2rem  rgba(0, 0, 0, 0.185);
+      border-radius: 10px;
+   }
+
+   .grid__icon{
+      float: right;
+      margin: .7rem .7rem 0 0 ;
+      color: orangered;
+
+   }
+
+   .grid__title{
+      margin-top: 3rem;
+      margin-left: .4rem;
+}
+</style>
+</html>

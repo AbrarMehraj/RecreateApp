@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+   <link rel="stylesheet" href="./main.css">
+   <title>Document</title>
+</head>
+<body>
+   <div class="container">
+      <div id="sidebar">
+         <!-- <div class="window__close" onclick="closeWindow()"><i class="close icon"></i></div> -->
+         <!--  -->
+         <div class="togglebtn" onclick="toggleBtn()">&nbsp;</div>
+
+         <div class="side__profile">
+            <div class="profile__avatar"><img src="./hi.jpg" alt=""></div>
+            <div class="profile__name">!Hola <span class="name__bold">Slva Kumar!</span> <span class="block">Modifica tu perfil <i class="pencil alternate icon"></i></span></div>
+         </div>
+
+         <div class="blank__card">&nbsp;</div>
+
+         <div class="sidenav__list">
+            <a href="./qrcode.html" class="sidenav__item"><i class="thumbs up icon"></i> Mi codigo QR</a>
+            <a href="./account.html" class="sidenav__item"><i class="thumbs up icon"></i> Mi Cuenta</a>
+            <a href="./trips.html" class="sidenav__item"><i class="thumbs up icon"></i> Mis viajes</a>
+            <a href="#" class="sidenav__item"><i class="thumbs up icon"></i> Mis Movimientos</a>
+            <a href="#" class="sidenav__item"><i class="thumbs up icon"></i> Mis grupos</a>
+            <a href="#" class="sidenav__item"><i class="thumbs up icon"></i> Promocoines</a>
+            <a href="#" class="sidenav__item"><i class="thumbs up icon"></i> Terminos de uso</a>
+            <a href="#" class="sidenav__item"><i class="thumbs up icon"></i> Preguntas frecuentes</a>
+            <a href="#" class="sidenav__item"><i class="thumbs up icon"></i> Contactanos</a>
+            <a href="#" class="sidenav__item"><i class="thumbs up icon"></i> Refer n Earn</a>
+         </div>
+
+         <div class="copyright">
+            <span class="queries">Quieres ofrecer un viaje?</span>
+            <div class="copy__title">Cambia a<span class="copy__bold"> Modo conductor</span></div>
+         </div>
+      
+      </div>
+
+
+         <nav class="navigation">
+            <div class="navigation__menu " onclick="toggleBtn()">&nbsp;</div>
+            <div class="navigation__title">PasajeBus.<span>Com</span></div>
+            
+            <div class="navigation__notification">&nbsp;</div>
+         </nav>
+
+
+
+
+         <div class="searchCard">
+            <div class="searchWrapper">
+               <div class="search__title">¿Dónde estás?</div>
+               <div class="input__container">
+                  <div class="inputWrapper ">
+                     <input type="text" class="inputBox" placeholder="Origen">
+                     <div class="btline"></div>
+                  </div>
+                  <div class="inputWrapper">
+                     <input type="text" class="inputBox" placeholder="Destino">
+                  </div>
+               </div>
+
+               <div class="dateContainer">
+                  <div class="dateWrapper">
+                     <div class="text">¿Cuándo viajas?</div>
+                     <input type="date" class="date" placeholder="Arrival Date">
+                  </div>
+
+                  <div class="dateWrapper">
+                     <div class="text">¿Cuándo regresas?</div>
+                     <input type="date" class="date" placeholder="Return Date">
+                  </div>
+                  
+               </div>
+             
+            </div>
+         </div>
+
+
+         <div class="footerNav">
+            <div class="navlist">
+               <div class="nav__left">
+
+                  <div class="nav__item">
+                     <i class="home icon"></i>
+                     <div class="navtxt">indicio</div>
+                  </div>
+
+                  <div class="nav__item">
+                     <i class="home icon"></i>
+                     <div class="navtxt">Angular</div>
+                  </div>
+
+
+               </div>
+
+
+               <div class="nav__right">
+                  <div class="nav__item">
+                     <i class="home icon"></i>
+                     <div class="navtxt">Promociones</div>
+                  </div>
+
+                  <div class="nav__item">
+                     <i class="home icon"></i>
+                     <div class="navtxt">Contacto</div>
+                  </div>
+
+               </div>
+               
+            </div>
+         </div>
+
+
+         <a href="./buses.html" class="search__arrow">
+            <i class="arrow circle right icon"></i>
+         </div>
+   </div>
+
+
+
+  
+
+
+
+   
+   <style>
+     
+
+   </style>
+
+   <script>
+       toggleBtn = () =>{
+         document.getElementById('sidebar').classList.toggle('active')
+         console.log('slide')
+      }
+   </script>
+</body>
+</html>

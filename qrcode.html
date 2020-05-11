@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+   <link rel="stylesheet" href="./main.css">
+   <title>Document</title>
+</head>
+<body>
+   <div class="container">
+
+      <div class="qrnav">
+         <a href="./index.html" class="qrnav__item"><i class="arrow left icon"></i></a>
+         <div class="qrnav__item">Mi codigo <span class="qrspan">QR</span></div>
+         <div class="qrnav__item"><i class="info circle icon"></i></div>
+      </div>
+
+
+
+      <div class="qrscan__wrapper">
+         <div class="qrscan__image">
+            <img src="./qrscan.jpg" alt="" class="qrscan__img-inner">
+         </div>
+
+         <div class="line">&nbsp;</div>
+
+         <div class="qrscan__details">
+            <div class="qrscan__name">Pavan CC</div>
+            <div class="qrscan__id">32.132.132-1</div>
+         </div>
+      </div>
+
+
+      <div class="backshade">&nbsp;</div>
+      <!-- <div class="box">/ -->
+
+         <div class="btn__box">
+            <div class="compare same">compartir mi codigo</div>
+            <div class="clean same">escanear codigo</div>
+
+         </div>
+      <!-- </div> -->
+
+
+   </div>
+</body>
+
+   <style>
+     
+      .qrnav{
+         display: flex;
+         justify-content: space-between;
+         padding: .7rem;
+         font-size: 1.2rem;
+      }
+      
+      .qrnav__item i{
+         /* color: grey; */
+         cursor: pointer;
+      }
+
+      .qrspan{
+         font-weight: bold;
+      }
+
+      .qrscan__wrapper{
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         margin-top: 3rem;
+
+      }
+      .qrscan__image{
+
+      }
+
+      .qrscan__img-inner{
+         width: 230px;
+      }
+
+      .line{
+         height: 2px;
+         width: 70%;
+         background-color: grey;
+         margin: 1rem 0;
+      }
+
+      .qrscan__details{
+         display: flex;
+         justify-content: space-between;
+         width: 230px;
+      }
+
+      .backshade{
+         position: absolute;
+         background-image: url('./hi.jpg');
+         bottom: 0;
+         left: 0;
+         height: 150px;
+         width: 100%;
+         background-size: cover;
+         opacity: .4;
+         clip-path: polygon(0% 0% , 15% 10% ,100% -25% ,  100% 100% , 0% 100%);
+         /* clip-path: polygon(5% 5%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%); */
+
+         
+      }
+
+      .btn__box{
+         position: relative;
+         /* display: none */
+      }
+      .same{
+         text-transform: uppercase;
+         background-color: orangered;
+         padding: .8rem 2rem;
+         text-align: center;
+         border-radius: 10px;
+         color: white;
+         cursor: pointer;
+      }
+
+      .compare{
+         margin: 9.5rem  2rem  1rem 2rem ;
+      }
+
+      .clean{
+         margin: 0 2rem ;
+      }
+   </style>
+</html>
